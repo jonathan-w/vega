@@ -1,0 +1,4 @@
+node_modules
+dist/*.map
+dist/hot
+.DS_Store

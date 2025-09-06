@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Tiny theme token for the demo */
+@theme {
+  --color-primary: #ff0000;
+}

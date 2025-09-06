@@ -1,0 +1,22 @@
+{
+  "name": "vega-wp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "dev": "npm-run-all -p dev:css dev:js",
+    "dev:css": "npx @tailwindcss/cli -i ./src/styles/app.css -o ./dist/tailwind.css --watch",
+    "dev:js": "mix watch",
+    "hot": "npm-run-all -p dev:css hot:js",
+    "hot:js": "mix watch --hot",
+    "build": "npx @tailwindcss/cli -i ./src/styles/app.css -o ./dist/tailwind.css --minify && mix --production"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^4.1.12",
+    "@tailwindcss/cli": "^4.1.12"
+  }
+}
