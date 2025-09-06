@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
-/* Tiny theme token for the demo */
+@source "../**/*.{js,ts,jsx,tsx}";
+@source "../../**/*.{php,html}";
+@source "../../blocks/**/*.{php,js}";
+
 @theme {
-  --color-primary: #ff0000;
+  --color-primary:      var(--wp--preset--color--primary);
+  --color-secondary:    var(--wp--preset--color--secondary);
+  --color-accent:       var(--wp--preset--color--accent);
+  --color-base:         var(--wp--preset--color--base);
+  --color-base-alt:     var(--wp--preset--color--base-alt);
+
+  --font-sans: var(--wp--preset--font-family--onest);
 }

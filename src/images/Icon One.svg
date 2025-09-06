@@ -1,0 +1,13 @@
+<svg id="Icon_One" data-name="Icon One" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="78" viewBox="0 0 78 78">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="3.748" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#30cb98"/>
+      <stop offset="0.049" stop-color="#30cb98"/>
+      <stop offset="0.493" stop-color="#3bcbec"/>
+      <stop offset="0.946" stop-color="#a27be5"/>
+      <stop offset="1" stop-color="#a27be5"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_1781" data-name="Rectangle 1781" width="78" height="78" rx="5" fill="url(#linear-gradient)"/>
+  <path id="chart-mixed-regular" d="M41.992,35.566a2,2,0,1,0-2.6-3.034L26.7,43.411l-9.37-8.2a2.006,2.006,0,0,0-2.426-.158L.9,44.386A2,2,0,1,0,3.119,47.72l12.73-8.486,9.52,8.328a2,2,0,0,0,2.618.017l14.005-12ZM16.683,65.394a.667.667,0,1,1-1.334,0V52.055a.667.667,0,0,1,1.334,0Zm-.667-17.34a4,4,0,0,0-4,4V65.394a4,4,0,1,0,8,0V52.055A4,4,0,0,0,16.016,48.054Zm-10,17.34a.667.667,0,1,1-1.334,0V60.058a.667.667,0,1,1,1.334,0Zm-.667-9.337a4,4,0,0,0-4,4v5.335a4,4,0,1,0,8,0V60.058A4,4,0,0,0,5.345,56.057Zm22.008,1.334v8a.667.667,0,1,1-1.334,0v-8a.667.667,0,0,1,1.334,0Zm-4.668,0v8a4,4,0,1,0,8,0v-8a4,4,0,0,0-8,0Zm15.339,8a.667.667,0,1,1-1.334,0V52.055a.667.667,0,0,1,1.334,0Zm-.667-17.34a4,4,0,0,0-4,4V65.394a4,4,0,1,0,8,0V52.055A4,4,0,0,0,37.357,48.054Z" transform="translate(17.649 -11.724)" fill="#062c34"/>
+</svg>

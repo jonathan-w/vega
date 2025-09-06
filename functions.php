@@ -56,4 +56,11 @@ add_action('wp_enqueue_scripts', function () {
   if ($js) {
     wp_enqueue_script('fmt-js', $js, [], null, true);
   }
+
+  wp_enqueue_style(
+    'onest-font',
+    'https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap',
+    [],
+    null
+  );
 }, 20);

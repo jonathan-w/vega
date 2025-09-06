@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="14" viewBox="0 0 19 14">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-1.18" x2="0.5" y2="7.751" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#30cb98"/>
+      <stop offset="0.199" stop-color="#35cbc1"/>
+      <stop offset="0.527" stop-color="#3bcbec"/>
+      <stop offset="0.946" stop-color="#a27be5"/>
+      <stop offset="1" stop-color="#a27be5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="-7.644" y2="2.485" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" y1="-5.149" y2="3.911" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Burger" transform="translate(-373.967 -52.368)">
+    <rect id="Rectangle_2711" data-name="Rectangle 2711" width="19" height="2" rx="1" transform="translate(373.967 52.368)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_2712" data-name="Rectangle 2712" width="19" height="2" rx="1" transform="translate(373.967 64.368)" fill="url(#linear-gradient-2)"/>
+    <rect id="Rectangle_2713" data-name="Rectangle 2713" width="19" height="2" rx="1" transform="translate(373.967 58.368)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>
