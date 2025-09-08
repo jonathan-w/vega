@@ -15,9 +15,9 @@
 <div class="wp-block-group flex items-center justify-between py-24">
 
   <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"md:w-7/12"} -->
-  <figure class="wp-block-image size-full md:w-7/12 rounded-lg overflow-hidden mb-0 bg-base">
+  <figure class="wp-block-image size-full md:w-7/12 rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base">
     <img src="<?php echo esc_url(get_theme_file_uri('src/images/50-50 Image.jpg')); ?>"
-      alt="Stock photo of a person working at a desk" class="block w-full h-full object-cover bg-base" />
+      alt="Stock photo of a person working at a desk" />
   </figure>
   <!-- /wp:image -->
 
