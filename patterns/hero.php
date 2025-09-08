@@ -10,7 +10,7 @@
  */
 ?>
 <!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom","flexWrap":"nowrap","backgroundColor":"base-alt"}} -->
-<div class="wp-block-group flex items-end bg-base-alt rounded-lg">
+<div class="wp-block-group flex items-end bg-base-alt rounded-lg overflow-hidden">
 
   <!-- wp:group -->
   <div class="wp-block-group w-1/2 px-12 py-8">
@@ -38,7 +38,7 @@
   <!-- /wp:group -->
 
   <!-- wp:image {"align":"center","width":50%,"height":100%,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-  <figure class="wp-block-image aligncenter size-full is-resized w-1/2">
+  <figure class="wp-block-image aligncenter size-full is-resized w-1/2 m-0">
     <img src="<?php echo esc_url(get_theme_file_uri('src/images/Header Image.jpg')); ?>" alt="Stock photo of two people in a meeting" />
   </figure>
   <!-- /wp:image -->

@@ -19,11 +19,13 @@
     --text-6xl--line-height: 1;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary: var(--wp--preset--color--primary);
     --color-secondary: var(--wp--preset--color--secondary);
     --color-accent: var(--wp--preset--color--accent);
+    --color-base: var(--wp--preset--color--base);
     --color-base-alt: var(--wp--preset--color--base-alt);
   }
 }
@@ -216,6 +218,9 @@
     max-width: 96rem;
   }
 }
+.m-0 {
+  margin: calc(var(--spacing) * 0);
+}
 .mx-auto {
   margin-inline: auto;
 }
@@ -227,6 +232,9 @@
 }
 .mr-24 {
   margin-right: calc(var(--spacing) * 24);
+}
+.mb-0 {
+  margin-bottom: calc(var(--spacing) * 0);
 }
 .mb-8 {
   margin-bottom: calc(var(--spacing) * 8);
@@ -283,11 +291,17 @@
 .w-full {
   width: 100%;
 }
+.max-w-\[var\(--wp--custom--container--max\)\] {
+  max-width: var(--wp--custom--container--max);
+}
 .max-w-screen-xl {
   max-width: var(--breakpoint-xl);
 }
 .border-collapse {
   border-collapse: collapse;
+}
+.scale-\[1\.01\] {
+  scale: 1.01;
 }
 .transform {
   transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -360,6 +374,13 @@
 .rounded-lg {
   border-radius: var(--radius-lg);
 }
+.rounded-xl {
+  border-radius: var(--radius-xl);
+}
+.rounded-r-lg {
+  border-top-right-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-lg);
+}
 .border {
   border-style: var(--tw-border-style);
   border-width: 1px;
@@ -368,11 +389,20 @@
   border-top-style: var(--tw-border-style);
   border-top-width: 1px;
 }
+.bg-base {
+  background-color: var(--color-base);
+}
 .bg-base-alt {
   background-color: var(--color-base-alt);
 }
+.bg-inherit {
+  background-color: inherit;
+}
 .bg-primary {
   background-color: var(--color-primary);
+}
+.bg-transparent {
+  background-color: transparent;
 }
 .bg-gradient-to-r {
   --tw-gradient-position: to right in oklab;
@@ -418,6 +448,9 @@
 .py-8 {
   padding-block: calc(var(--spacing) * 8);
 }
+.py-24 {
+  padding-block: calc(var(--spacing) * 24);
+}
 .pt-8 {
   padding-top: calc(var(--spacing) * 8);
 }
@@ -453,6 +486,12 @@
   outline-style: var(--tw-outline-style);
   outline-width: 1px;
 }
+.will-change-transform {
+  will-change: transform;
+}
+.\[clip-path\:inset\(0_round_0\.5rem\)\] {
+  clip-path: inset(0 round 0.5rem);
+}
 .hover\:bg-primary\/90 {
   &:hover {
     @media (hover: hover) {
@@ -466,6 +505,21 @@
 .md\:h-\[53px\] {
   @media (width >= 48rem) {
     height: 53px;
+  }
+}
+.md\:w-4\/12 {
+  @media (width >= 48rem) {
+    width: calc(4/12 * 100%);
+  }
+}
+.md\:w-6\/12 {
+  @media (width >= 48rem) {
+    width: calc(6/12 * 100%);
+  }
+}
+.md\:w-7\/12 {
+  @media (width >= 48rem) {
+    width: calc(7/12 * 100%);
   }
 }
 .md\:text-4xl {

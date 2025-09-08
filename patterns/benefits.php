@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Product Feature
- * Slug: vega/product-feature
+ * Title: Benefits
+ * Slug: vega/benefits
  * Categories: featured
- * Description: Two-column feature with large image, title and two paragraphs.
+ * Description: Four column feature with icons and links to more information.
  * Inserter: yes
  *
  * @package vega
