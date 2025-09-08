@@ -7,7 +7,7 @@ add_action('after_setup_theme', function () {
   remove_action('wp_head', 'print_emoji_detection_script', 7);
   remove_action('wp_print_styles', 'print_emoji_styles');
   add_theme_support('disable-layout-styles');
-  
+
   add_action('wp_enqueue_scripts', function () {
     wp_dequeue_style('wp-block-library');
     wp_dequeue_style('classic-theme-styles');
@@ -103,4 +103,19 @@ function register_button_styles()
     )
   );
 }
+
+// Allow SVG uploads (no sanitization). Prefer a sanitizer plugin in production.
+add_filter('upload_mimes', function ($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+});
+add_filter('wp_check_filetype_and_ext', function ($data, $file, $filename, $mimes) {
+  if (strtolower(pathinfo($filename, PATHINFO_EXTENSION)) === 'svg') {
+    $data['ext'] = 'svg';
+    $data['type'] = 'image/svg+xml';
+  }
+  return $data;
+}, 10, 4);
+
 add_action('init', 'register_button_styles');
+
