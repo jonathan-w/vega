@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "",
-  "license": "ISC",
+  "license": "GPl-2.0-or-later",
   "description": "",
   "scripts": {
     "dev": "npm-run-all -p dev:css dev:js",

@@ -3,12 +3,16 @@ if (!defined('ABSPATH'))
   exit;
 
 add_action('after_setup_theme', function () {
-  add_theme_support('wp-block-styles');
-  add_theme_support('editor-styles');
-  add_theme_support('responsive-embeds');
-  add_theme_support('appearance-tools');
-  add_theme_support('custom-spacing');
-  add_theme_support('post-thumbnails');
+  remove_action('wp_head', 'wp_generator');
+  remove_action('wp_head', 'print_emoji_detection_script', 7);
+  remove_action('wp_print_styles', 'print_emoji_styles');
+  add_theme_support('disable-layout-styles');
+  
+  add_action('wp_enqueue_scripts', function () {
+    wp_dequeue_style('wp-block-library');
+    wp_dequeue_style('classic-theme-styles');
+    wp_dequeue_style('global-styles');
+  });
 });
 
 require_once get_theme_file_path('/includes/acf-blocks.php');
@@ -63,4 +67,40 @@ add_action('wp_enqueue_scripts', function () {
     [],
     null
   );
-}, 20);
+}, 100);
+
+function register_button_styles()
+{
+  register_block_style(
+    'core/button',
+    array(
+      'name' => 'primary',
+      'label' => __('Primary', 'vega'),
+    )
+  );
+
+  register_block_style(
+    'core/button',
+    array(
+      'name' => 'secondary',
+      'label' => __('Secondary', 'vega'),
+    )
+  );
+
+  register_block_style(
+    'core/button',
+    array(
+      'name' => 'gradient',
+      'label' => __('Gradient', 'vega'),
+    )
+  );
+
+  register_block_style(
+    'core/button',
+    array(
+      'name' => 'icon-white',
+      'label' => __('Icon (White)', 'vega'),
+    )
+  );
+}
+add_action('init', 'register_button_styles');
