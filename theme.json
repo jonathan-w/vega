@@ -39,6 +39,11 @@
                     "slug": "on-gradient",
                     "name": "On Gradient (Text)",
                     "color": "#11111F"
+                },
+                {
+                    "slug": "on-secondary",
+                    "name": "On Secondary (Text)",
+                    "color": "#02252C"
                 }
             ],
             "gradients": [
@@ -115,6 +120,17 @@
                         "color": {
                             "background": "var(--wp--preset--color--foreground)",
                             "text": "var(--wp--preset--color--on-gradient)"
+                        },
+                        "spacing": {
+                            "padding": {
+                                "top": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "right": "0"
+                            }
+                        },
+                        "typography": {
+                            "textAlign": "center"
                         }
                     }
                 },
