@@ -12,7 +12,8 @@
 ?>
 
 <!-- wp:group {"className":"benefit-card group border border-white relative rounded-xl p-6 md:p-8 focus-within:ring-2 focus-within:ring-primary/40 hover:bg-base-alt transition-colors ease-in duration-200","layout":{"type":"constrained"}} -->
-<div class="wp-block-group benefit-card group border border-white relative rounded-xl p-6 md:p-8 focus-within:ring-2 focus-within:ring-primary/40 hover:bg-base-alt transition-colors ease-in duration-200">
+<div
+  class="wp-block-group benefit-card group border border-white relative rounded-xl p-6 md:p-8 focus-within:ring-2 focus-within:ring-primary/40 hover:bg-base-alt transition-colors ease-in duration-200">
 
   <!-- wp:image {"sizeSlug":"full","linkDestination":"none","width":78,"className":"mb-18"} -->
   <figure class="wp-block-image size-thumbnail is-resized mb-18">
@@ -24,8 +25,8 @@
   <h3 class="text-lg md:text-2xl font-bold">Benefit title</h3>
   <!-- /wp:heading -->
 
-  <!-- wp:paragraph {"className":"mt-4 mb-14"} -->
-  <p class="mt-4 mb-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+  <!-- wp:paragraph {"className":"mt-4 mb-8 md:mb-14"} -->
+  <p class="mt-4 mb-8 md:mb-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
   <!-- /wp:paragraph -->
 
   <!-- wp:paragraph {"className":"mt-4"} -->

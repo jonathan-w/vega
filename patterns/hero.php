@@ -9,15 +9,15 @@
  * @since 1.0.0
  */
 ?>
-<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom","flexWrap":"nowrap","backgroundColor":"base-alt"}} -->
-<div class="wp-block-group flex items-end bg-base-alt rounded-lg overflow-hidden">
+<!-- wp:group {"className":"flex flex-col md:flex-row md:items-end bg-base-alt rounded-lg overflow-hidden","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom","flexWrap":"nowrap","backgroundColor":"base-alt"}} -->
+<div class="wp-block-group flex flex-col md:flex-row md:items-end bg-base-alt rounded-lg overflow-hidden">
 
   <!-- wp:group -->
-  <div class="wp-block-group w-1/2 px-12 py-16">
+  <div class="wp-block-group w-full md:w-1/2 px-6 md:px-12 pb-8 md:pb-16 pt-48">
 
     <!-- wp:heading {"level":1} -->
-    <h1 class="text-4xl md:text-6xl font-bold">A <span
-        class="bg-gradient-to-r from-secondary via-primary to-accent bg-clip-text text-transparent">new world</span>
+    <h1 class="text-5xl md:text-6xl font-bold">
+      A <span class="bg-gradient-to-r from-secondary via-primary to-accent bg-clip-text text-transparent">new world</span>
       <br /> of solutions.
     </h1>
     <!-- /wp:heading -->
@@ -46,7 +46,7 @@
   <!-- /wp:group -->
 
   <!-- wp:image {"align":"center","width":50%,"height":100%,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-  <figure class="wp-block-image aligncenter size-full is-resized w-1/2 m-0">
+  <figure class="wp-block-image aligncenter size-full is-resized md:w-1/2 m-0">
     <img src="<?php echo esc_url(get_theme_file_uri('src/images/Header Image.jpg')); ?>"
       alt="Stock photo of two people in a meeting" />
   </figure>

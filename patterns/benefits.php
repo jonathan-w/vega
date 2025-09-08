@@ -11,8 +11,8 @@
  */
 ?>
 
-<!-- wp:group {"className":"flex items-center","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"nowrap"}} -->
-<div class="wp-block-group flex items-center justify-between py-24 gap-8">
+<!-- wp:group {"className":"flex flex-col md:flex-row md:items-center","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"nowrap"}} -->
+<div class="wp-block-group flex flex-col md:flex-row md:items-center justify-between py-24 gap-8">
 
     <!-- wp:group {"className":"md:w-1/4"} -->
     <div class="wp-block-group md:w-1/4">

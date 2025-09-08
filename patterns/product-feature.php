@@ -11,8 +11,8 @@
  */
 ?>
 
-<!-- wp:group {"className":"flex items-center","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"nowrap"}} -->
-<div class="wp-block-group flex items-center justify-between py-24">
+<!-- wp:group {"className":"flex flex-col md:flex-row gap-8 md:gap-0 md:items-center","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"nowrap"}} -->
+<div class="wp-block-group flex flex-col md:flex-row gap-8 md:gap-0 md:items-center justify-between py-6 md:py-24">
 
   <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"md:w-7/12"} -->
   <figure class="wp-block-image size-full md:w-7/12 rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base">
@@ -21,8 +21,8 @@
   </figure>
   <!-- /wp:image -->
 
-  <!-- wp:group {"className":" md:w-4/12"} -->
-  <div class="wp-block-group md:w-4/12">
+  <!-- wp:group {"className":"md:w-4/12 px-3 md:px-0"} -->
+  <div class="wp-block-group md:w-4/12 px-3 md:px-0">
 
     <!-- wp:heading {"level":2,"className":"text-2xl md:text-4xl font-bold"} -->
     <h2 class="text-2xl md:text-4xl font-bold">Sed ut nisi quis felis varius molestie.</h2>

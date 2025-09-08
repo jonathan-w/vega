@@ -9,12 +9,12 @@
 @source "../../blocks/**/*.{php,js}";
 
 @theme {
-  --color-primary:      var(--wp--preset--color--primary);
-  --color-secondary:    var(--wp--preset--color--secondary);
-  --color-accent:       var(--wp--preset--color--accent);
-  --color-base:         var(--wp--preset--color--base);
-  --color-base-alt:     var(--wp--preset--color--base-alt);
-  --color-on-gradient:  var(--wp--preset--color--on-gradient);
+  --color-primary: var(--wp--preset--color--primary);
+  --color-secondary: var(--wp--preset--color--secondary);
+  --color-accent: var(--wp--preset--color--accent);
+  --color-base: var(--wp--preset--color--base);
+  --color-base-alt: var(--wp--preset--color--base-alt);
+  --color-on-gradient: var(--wp--preset--color--on-gradient);
   --color-on-secondary: var(--wp--preset--color--on-secondary);
 
   --font-sans: var(--wp--preset--font-family--onest);
@@ -28,9 +28,7 @@ body {
   padding: 0;
 }
 
-.has-quote-bg{
+.has-quote-bg {
   background-image: url("../src/images/Pattern.png");
   background-repeat: no-repeat;
-  background-size: cover;   /* redundant with bg-cover but fine */
-  background-position: center center;
 }
