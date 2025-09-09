@@ -127,3 +127,33 @@ add_filter('wp_check_filetype_and_ext', function ($data, $file, $filename, $mime
 
 add_action('init', 'register_button_styles');
 
+
+function custom_render_block_core_navigation( string $block_content, array $block ) {
+  if (
+    isset($block['blockName']) &&
+    $block['blockName'] === 'core/navigation' &&
+    !is_admin() &&
+    !wp_is_json_request()
+  ) {
+    static $burger_svg = null;
+
+    if ($burger_svg === null) {
+      $svg_path = get_theme_file_path('src/images/Burger.svg');
+
+      if (!file_exists($svg_path)) {
+        // If not found, bail out without breaking the block
+        return $block_content;
+      }
+
+      $burger_svg = file_get_contents($svg_path);
+      // Strip XML declaration if present to avoid invalid HTML inside
+      $burger_svg = preg_replace('#<\?xml[^>]*\?>#', '', $burger_svg);
+    }
+
+    // Replace only the first <svg> (the "open" icon). Leave the "close" icon as-is.
+    $block_content = preg_replace('#<svg\b[^>]*>.*?</svg>#s', $burger_svg, $block_content, 1);
+  }
+
+  return $block_content;
+}
+add_filter('render_block', 'custom_render_block_core_navigation', 10, 2);
