@@ -9,10 +9,10 @@
  * @since 1.0.0
  */
 ?>
-<!-- wp:group {"className":"flex flex-col lg:flex-row lg:items-end bg-base-alt rounded-lg overflow-hidden","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom","flexWrap":"nowrap","backgroundColor":"base-alt"}} -->
+<!-- wp:group {"className":"flex flex-col lg:flex-row lg:items-end bg-base-alt rounded-lg overflow-hidden","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom","flexWrap":"nowrap"}} -->
 <div class="wp-block-group flex flex-col lg:flex-row lg:items-end bg-base-alt rounded-lg overflow-hidden">
 
-  <!-- wp:group -->
+  <!-- wp:group {"className":"w-full lg:w-3/5 xl:w-1/2 px-6 lg:px-12 pb-8 lg:pb-16 pt-48"} -->
   <div class="wp-block-group w-full lg:w-3/5 xl:w-1/2 px-6 lg:px-12 pb-8 lg:pb-16 pt-48">
 
     <!-- wp:heading {"level":1} -->
@@ -29,25 +29,24 @@
     <!-- wp:buttons {"layout":{"type":"flex","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"11px"}}} -->
     <div class="wp-block-buttons">
       <!-- wp:button {"className":"is-style-primary"} -->
-      <div class="wp-block-button">
+      <div class="wp-block-button is-style-primary">
         <a class="wp-block-button__link wp-element-button">
           Book a demo
           <svg class="h-3 w-3 ml-4" focusable="false" viewBox="0 0 13.218 13" fill="#11111f">
-            <path d="M12.827,9.886,8.469,5.4,9.618,4.222l6.32,6.5-6.32,6.5L8.469,16.04l4.358-4.482H2.72V9.886Z"
-              transform="translate(-2.72 -4.222)" />
+            <path d="M12.827,9.886,8.469,5.4,9.618,4.222l6.32,6.5-6.32,6.5L8.469,16.04l4.358-4.482H2.72V9.886Z" transform="translate(-2.72 -4.222)" />
           </svg>
         </a>
       </div>
       <!-- /wp:button -->
     </div>
     <!-- /wp:buttons -->
-     
+
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:image {"align":"center","width":50%,"height":100%,"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-  <figure class="wp-block-image aligncenter size-full is-resized lg:w-2/5 xl:w-1/2 h-full m-0">
-    <img src="<?php echo esc_url(get_theme_file_uri('src/images/Header Image.jpg')); ?>" alt="Stock photo of two people in a meeting" class="w-full" />
+  <!-- wp:image {"align":"center","sizeSlug":"full","linkDestination":"none","className":"hero-media lg:w-2/5 xl:w-1/2 h-full m-0"} -->
+  <figure class="wp-block-image aligncenter size-full hero-media lg:w-2/5 xl:w-1/2 h-full m-0">
+    <img src="<?php echo esc_url(get_theme_file_uri('src/images/Header Image.jpg')); ?>" alt="Stock photo of two people in a meeting" />
   </figure>
   <!-- /wp:image -->
 

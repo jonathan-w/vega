@@ -32,3 +32,7 @@ body {
   background-image: url("../src/images/Pattern.png");
   background-repeat: no-repeat;
 }
+
+.hero-media img {
+  @apply w-full h-full object-cover;
+}

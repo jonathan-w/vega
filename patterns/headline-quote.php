@@ -40,15 +40,15 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"md:w-3/12 rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base md:hidden"} -->
-  <figure class="wp-block-image size-full md:w-3/12 rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base md:hidden">
+  <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"hero-media md:w-3/12 rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base md:hidden"} -->
+  <figure class="wp-block-image size-full hero-media md:w-3/12 rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base md:hidden">
     <img src="<?php echo esc_url(get_theme_file_uri('src/images/Testimonial Image Mobile.jpg')); ?>"
-      alt="Stock photo of a person working at a desk" class="w-full" />
+      alt="Stock photo of a person working at a desk" />
   </figure>
   <!-- /wp:image -->
 
-  <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"md:w-3/12 rounded-r-lg overflow-hidden mb-0 mr-0 w-full bg-base hidden md:block"} -->
-  <figure class="wp-block-image size-full md:w-3/12 rounded-r-lg overflow-hidden mb-0 mr-0 w-full bg-base hidden md:block">
+  <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"hero-media md:w-3/12 rounded-r-lg overflow-hidden mb-0 mr-0 w-full h-full bg-base hidden md:block"} -->
+  <figure class="wp-block-image size-full hero-media md:w-3/12 rounded-r-lg overflow-hidden mb-0 mr-0 w-full h-full bg-base hidden md:block">
     <img src="<?php echo esc_url(get_theme_file_uri('src/images/Testimonial Image.jpg')); ?>"
       alt="Stock photo of a person working at a desk" />
   </figure>
