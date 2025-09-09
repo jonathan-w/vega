@@ -58,11 +58,8 @@ $query = new WP_Query([
                     </p>
                     <!-- /wp:paragraph -->
 
-                    <!-- Spacer pushes the link to the bottom -->
-                    <div class="flex-grow"></div>
-
-                    <!-- wp:paragraph {"className":"lg:mt-4"} -->
-                    <p class="lg:mt-4">
+                    <!-- wp:paragraph {"className":"mt-auto"} -->
+                    <p class="mt-auto">
                         <span class="inline-flex items-center font-medium text-white no-underline">
                             Learn more
                             <svg class="h-4 w-4 ml-4 transition-transform duration-200 group-hover:translate-x-2 group-focus-within:translate-x-2"

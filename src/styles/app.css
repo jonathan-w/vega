@@ -36,3 +36,7 @@ body {
 .hero-media img {
   @apply w-full h-full object-cover;
 }
+
+.is-mobile-cover>img {
+  @apply w-full h-64 object-cover object-center md:h-auto;
+}
