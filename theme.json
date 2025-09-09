@@ -116,6 +116,23 @@
                             "text": "var(--wp--preset--color--on-gradient)"
                         }
                     },
+                    "icon": {
+                        "color": {
+                            "background": "transparent",
+                            "text": "var(--wp--preset--color--foreground)"
+                        },
+                        "spacing": {
+                            "padding": {
+                                "top": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "right": "0"
+                            }
+                        },
+                        "typography": {
+                            "textAlign": "center"
+                        }
+                    },
                     "icon-white": {
                         "color": {
                             "background": "var(--wp--preset--color--foreground)",

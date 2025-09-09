@@ -102,6 +102,14 @@ function register_button_styles()
       'label' => __('Icon (White)', 'vega'),
     )
   );
+
+  register_block_style(
+    'core/button',
+    array(
+      'name' => 'icon',
+      'label' => __('Icon', 'vega'),
+    )
+  );
 }
 
 // Allow SVG uploads (no sanitization). Prefer a sanitizer plugin in production.
