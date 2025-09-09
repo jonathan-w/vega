@@ -40,10 +40,10 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"md:w-3/12 rounded-r-lg overflow-hidden mb-0 mr-0 w-full bg-base md:hidden"} -->
-  <figure class="wp-block-image size-full md:w-3/12 rounded-r-lg overflow-hidden mb-0 mr-0 w-full bg-base md:hidden">
+  <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"md:w-3/12 rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base md:hidden"} -->
+  <figure class="wp-block-image size-full md:w-3/12 rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base md:hidden">
     <img src="<?php echo esc_url(get_theme_file_uri('src/images/Testimonial Image Mobile.jpg')); ?>"
-      alt="Stock photo of a person working at a desk" />
+      alt="Stock photo of a person working at a desk" class="w-full" />
   </figure>
   <!-- /wp:image -->
 
