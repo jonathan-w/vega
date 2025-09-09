@@ -1,0 +1,17 @@
+/* Scope everything to the editor canvas */
+.editor-styles-wrapper .block-editor-rich-text__editable,
+.editor-styles-wrapper .editor-post-title__input {
+  /* restore normal wrapping and let the element shrink */
+  white-space: normal !important;
+  min-width: 0 !important;
+}
+
+/* Keep specific things single-line in the editor */
+.editor-styles-wrapper .wp-block-button__link,
+.editor-styles-wrapper .wp-block-navigation .wp-block-navigation-item__content {
+  white-space: nowrap !important;
+}
+
+/* Optional: blunt-force reset if you don’t want to list targets */
+.editor-styles-wrapper [style*="white-space: pre-wrap"] { white-space: normal !important; }
+.editor-styles-wrapper [style*="min-width: 1px"] { min-width: 0 !important; }

@@ -11,13 +11,12 @@
  */
 ?>
 
-<!-- wp:group {"className":"flex flex-col md:flex-row gap-8 md:gap-0 md:items-center","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"nowrap"}} -->
+<!-- wp:group {"className":"flex flex-col md:flex-row gap-8 md:gap-0 md:items-center justify-between py-6 md:py-24","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"nowrap"}} -->
 <div class="wp-block-group flex flex-col md:flex-row gap-8 md:gap-0 md:items-center justify-between py-6 md:py-24">
 
-  <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"md:w-7/12"} -->
-  <figure class="wp-block-image size-full md:w-7/12 rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base">
-    <img src="<?php echo esc_url(get_theme_file_uri('src/images/50-50 Image.jpg')); ?>"
-      alt="Stock photo of a person working at a desk" />
+  <!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"md:w-7/12 hero-media rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base"} -->
+  <figure class="wp-block-image size-full md:w-7/12 hero-media rounded-lg overflow-hidden mb-0 mr-0 w-full bg-base">
+    <img src="<?php echo esc_url( get_theme_file_uri('src/images/50-50 Image.jpg') ); ?>" alt="Stock photo of a person working at a desk" />
   </figure>
   <!-- /wp:image -->
 
