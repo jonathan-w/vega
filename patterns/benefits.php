@@ -10,6 +10,11 @@
  * @since 1.0.0
  */
 
+// If ACF isn't installed/active, do nothing.
+if (!function_exists('get_field')) {
+    return;
+}
+
 $query = new WP_Query([
     'post_type'      => 'service',
     'nopaging'       => true,
