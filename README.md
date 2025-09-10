@@ -7,8 +7,9 @@
 
 - Run ``export/compose.yaml`` to get local wordpress running
 - Clone this repo into ``wp-content/themes`` - ``git clone https://github.com/jonathan-w/vega.git``
-- Activate Vega theme
-- Install All-in-One WP Migration and import from ``localhost-20250909-171657-asksl1zpp0r2.wpress`` (will have to edit .htaccess to allow the large file upload)
+- Import ``wordpress.sql`` into local mysql
+- Replace ``uploads`` and ``plugins`` folders in ``wp-content``
+- Make sure to activate ACF and Custom Post Type plugins
 
 ## Future considerations
 
